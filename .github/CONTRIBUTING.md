@@ -18,6 +18,6 @@
 - ## Reporting Bugs
 
 - Check existing issues before reporting a new one.
-- Use the [bug report template](ISSUE_TEMPLATE/bug_report.md) to file your report.
+- Use the [bug report template](.github/bug_report.md) to file your report.
 
  ### We appreciate your contribution!
