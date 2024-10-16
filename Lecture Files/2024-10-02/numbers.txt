@@ -1,0 +1,187 @@
+This is the year 2024  35472  MSD..LSD
+Decimal Number System: (0..9)
+base = 10
+3	5	4	7	2
+10^4	10^3	10^2	10^1	10^0
+10,000	1,000	100	10	1
+30,000	5,000	400	70	2
+30,000 + 5,000 + 400 + 70 + 2 = 35472  
+
+Decimal is not powers of 2
+Computers use powers of 2
+Computers use the binary system (0,1)
+base = 2
+Bit = binary digit = 0 or 1
+Binary 100101
+1	0	0	1	0	1
+2^5	2^4	2^3	2^2	2^1	2^0
+32	16	8	4	2	1
+32 + 0 + 0 + 4 + 0 + 1 = 37
+
+1100
+256 128 64 32 16 8 4 2 1
+8-bit binary unsigned: 
+0000 0000  = 0 
+1111 1111 = 1 0000 0000 - 1 = 2^8 - 1 = 256 - 1 = 255
+32-bit number: 2^32 - 1
+
+111 = 1 * 1 + 1 * 2 + 1 * 4 = 1 + 2 + 4 = 7 = 2^3 - 1
+
+101	5
+010 +	2
+===
+111 = 7
+
+ 11
+ 101	5
+ 011 +	3
+ ===
+1000	8
+
+4-bit	dec	hex
+0000	0	0
+0001	1	1
+0010	2	2
+0011	3	3
+0100	4	4
+0101	5	5
+0110	6	6
+0111	7	7
+1000	8	8
+1001	9	9
+====	==
+1010	10	A a
+1011	11	B b
+1100	12	C c
+1101	13	D d
+1110	14	E e
+1111	15	F f
+
+Hexagonal  4-bit
+base = 16
+digits: (0..9, A..F)
+
+Octal	3-bit
+base = 8 (0..7)
+
+Conversion between powers of 2 system is easy.
+Between Hex and Binary: in place
+Example:  AB72 -> 1010-1011-0111-0010
+Binary to Hex:
+0111-1010-0011-1111 -> 7A3F
+
+123 is treated as decimal.
+0123 is treated as octal.
+0x123 is treated as hexadecimal.
+0b101 is treated as binary (C++14).
+15 (dec), 017 (oct), oxf (hex), ob1111 (binary)
+
+=====================
+https://en.cppreference.com/w/cpp/language/types
+https://www.tutorialspoint.com/cpp_standard_library/limits.htm
+
+Unsigned Numbers:
+=================
+all bits have values and the number is positive.
+
+0010 0101 = + 0010 0101
+min = 0000 0000 = 0
+max = 1111 1111 = 255 = 2^8 - 1
+
+for n bits
+min all 0's 
+max = 2^n  - 1;
+
+Welcome to numbers2
+8 bits
+unsigned char min_v = 0
+unsigned char max_v = 255
+
+16 bits
+unsigned short min_v = 0
+unsigned short max_v = 65535
+
+32 bits
+unsigned int min_v = 0
+unsigned int max_v = 4294967295
+
+32 bits
+unsigned long min_v = 0
+unsigned long max_v = 4294967295
+
+64 bits
+unsigned long long min_v = 0
+unsigned long long max_v = 18446744073709551615
+
+Signed Numbers:
+===============
++ve and -ve
+8 bits signed
+char min_v = -128
+char max_v = 127
+
+16 bits signed
+short min_v = -32768
+short max_v = 32767
+
+32 bits
+int min_v = -2147483648
+int max_v = 2147483647
+
+32 bits
+long min_v = -2147483648
+long max_v = 2147483647
+
+64 bits
+long long min_v = -9223372036854775808
+long long max_v = 9223372036854775807
+
+
+
+Negative Numbers Representation
+===============================
+signed magnitude
+1's complement
+2's complement
+
+Signed Magnitude:
+left bit (MSB) is 0 for +ve, 1 for -ve
+the rest of the bits are unsigned number
+
+0111 = 07
+1111 = -7
+0101 = 5
+1101 = -5
+
+1's complement
+==============
+1110 1100
+1's flip bits
+0001 0011
+
+Not so useful in computers
+
+2's complement
+==============
+Take 1's complement and add 1
+Or from right to left, flip all bits after first 1
+
+1110 1100
+
+0001 0011 1's
+        1 add 1
+=========
+0001 0100
+
+flip every bit after first 1 from right
+1110 1100
+0001 0100
+
+
+
+
+
+
+
+
+
