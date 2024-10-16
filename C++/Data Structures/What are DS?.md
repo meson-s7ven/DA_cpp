@@ -18,7 +18,7 @@ string melons;
 ```
 <br>
 How ever, there might be too many to type each and every one of them individually. Instead we can create<br>
-an array ```fruit_basket``` and store all the fruits in that array.
+an array fruit_basket and store all the fruits in that array.
 <br>
 
 ```
